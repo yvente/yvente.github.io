@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#5856d6">
+    <title>Noise Diary Support</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --accent: #5856d6;
+            --accent-soft: #efeffb;
+            --background: #f2f2f7;
+            --surface: #ffffff;
+            --text: #1c1c1e;
+            --secondary: #636366;
+            --border: rgba(88, 86, 214, 0.18);
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 48px 24px;
+            background: var(--background);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+        main {
+            width: min(100%, 820px);
+            margin: 0 auto;
+            padding: 44px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            box-shadow: 0 18px 50px rgba(44, 43, 110, 0.08);
+        }
+        .eyebrow {
+            margin: 0 0 8px;
+            color: var(--accent);
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+        h1, h2, h3 {
+            color: var(--accent);
+            line-height: 1.25;
+        }
+        h1 {
+            margin: 0 0 8px;
+            font-size: clamp(2rem, 6vw, 3rem);
+            letter-spacing: -0.035em;
+        }
+        h2 {
+            margin: 36px 0 12px;
+            font-size: 1.4rem;
+        }
+        h3 {
+            margin: 24px 0 8px;
+            font-size: 1.08rem;
+        }
+        p, ul {
+            margin: 0 0 16px;
+        }
+        ul {
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .updated {
+            margin-bottom: 28px;
+            color: var(--secondary);
+            font-size: 0.95rem;
+        }
+        .summary {
+            margin: 28px 0;
+            padding: 20px 22px;
+            background: var(--accent-soft);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+        }
+        a {
+            color: var(--accent);
+            font-weight: 600;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+        }
+        .footer-link {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --accent: #8e8cff;
+                --accent-soft: rgba(94, 92, 230, 0.16);
+                --background: #000000;
+                --surface: #1c1c1e;
+                --text: #f2f2f7;
+                --secondary: #aeaeb2;
+                --border: rgba(142, 140, 255, 0.25);
+            }
+            main {
+                box-shadow: none;
+            }
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 14px;
+            }
+            main {
+                padding: 28px 22px;
+                border-radius: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <p class="eyebrow">Noise Diary</p>
+    <h1>Support</h1>
+    <p class="updated">Last updated: August 16, 2026</p>
+
+    <p>Noise Diary is an iPhone app that helps you keep a simple diary of the sound around you. It shows an approximate live dB(A) reading, lets you start and stop noise events, saves approximate Leq, maximum, and minimum values with tags and notes, and can export your history as CSV or PDF. All processing and storage happen on your device — no audio is recorded or uploaded.</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have a question, bug report, feature request, or need help with Noise Diary, email us and we will get back to you as soon as we can:</p>
+    <ul>
+        <li>Email: <a href="mailto:yvente@163.com">yvente@163.com</a></li>
+    </ul>
+    <p>When you contact us, please include your iPhone model, iOS version, and a short description of what happened. You do not need to attach any measurement records or personal information.</p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>How do I grant or restore microphone permission?</h3>
+    <p>Noise Diary needs microphone permission to measure sound. The first time you open the App, iOS will ask for permission — tap Allow. If you denied it earlier or want to restore it later, open the iOS <strong>Settings</strong> app, find <strong>Noise Diary</strong> in the list (or go to <strong>Settings &gt; Privacy &amp; Security &gt; Microphone</strong>), and turn the microphone toggle on. Without microphone permission, live measurement and noise-event recording are unavailable, but the rest of the App remains accessible.</p>
+
+    <h3>How do I start and end a noise event?</h3>
+    <p>Open the App and tap the start button to begin a noise event. While the event is running, the App calculates the running Leq, maximum, and minimum values. Tap the stop button to end the event, then add a tag and note if you wish and save it to your history. You can review, edit, and delete saved events from the history view. Measurement only happens inside an event you deliberately start — the App never monitors your environment on its own.</p>
+
+    <h3>When does background measurement run?</h3>
+    <p>Only an event you explicitly start may continue while the screen is locked or another app is open. The App does not continuously monitor in the background outside an active event, and it does not create audio recordings. Background operation can be interrupted or stopped by iOS — for example by a phone call, an alarm, another audio session, low resources, a device restart, or force quitting the App. If a session is interrupted, the App tries to recover a recent in-progress checkpoint, but uninterrupted measurement cannot be guaranteed.</p>
+
+    <h3>Why are measurements approximate?</h3>
+    <p>Noise Diary uses the iPhone microphone to estimate sound levels, and the result depends on the device model, microphone condition, protective case, phone position, audio input route, and the type of sound itself. It is not an IEC-compliant professional sound level meter, and readings should not be used as legal evidence or for health, hearing-safety, or regulatory decisions. For better personal consistency, you can apply a calibration offset in the App by comparing against a trusted reference meter under similar conditions. See the <a href="terms_of_use.html">Terms of Use</a> for the full measurement notice.</p>
+
+    <h3>How do I export my records as CSV or PDF?</h3>
+    <p>Open the history view, select the events you want to export, and choose the CSV or PDF export option. CSV files contain the raw record fields — timestamps, duration, Leq, maximum and minimum values, tags, and notes — which is convenient for spreadsheets. PDF files produce a formatted report that is easy to read or share. The file is created on your device and passed to whichever destination you choose from the iOS share sheet, such as saving to Files, sending by email, or sharing with another app. Your records stay on your device unless you choose to export or share them.</p>
+
+    <h3>How do I restore Lifetime Pro?</h3>
+    <p>Lifetime Pro is a one-time, non-subscription purchase tied to your Apple Account. If you reinstall the App, switch to a new iPhone, or do not see your Pro features, open the App’s purchase or settings screen and tap <strong>Restore Purchases</strong>. Sign in with the same Apple Account used for the original purchase and Apple will restore your entitlement. Restoration is free and never charges you again. If restoration does not work, make sure you are signed in with the correct Apple Account, check your purchase history in the App Store, and feel free to <a href="mailto:yvente@163.com">email us</a> for help.</p>
+
+    <h2>Related Pages</h2>
+    <ul>
+        <li><a href="privacy_policy.html">Noise Diary Privacy Policy</a></li>
+        <li><a href="terms_of_use.html">Noise Diary Terms of Use</a></li>
+    </ul>
+
+    <p class="footer-link">Noise Diary support page · Current version: 1.0 · Last updated: August 16, 2026 · <a href="mailto:yvente@163.com">yvente@163.com</a></p>
+</main>
+</body>
+</html>
