@@ -6,80 +6,104 @@
     <meta name="robots" content="noindex"> <!-- 防止搜索引擎索引 -->
     <title>FaceMask Privacy Policy</title>
     <style>
+        :root {
+            color-scheme: light dark;
+            --accent: #d99a00;
+            --text: #202124;
+            --muted: #5f6368;
+            --surface: #ffffff;
+            --soft: #fff8df;
+            --border: #e7e2d5;
+        }
+        * { box-sizing: border-box; }
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            margin: 0 auto;
+            padding: 48px 24px 72px;
+            line-height: 1.65;
+            color: var(--text);
+            background: var(--surface);
+            max-width: 860px;
         }
-        h1, h2, h3 {
-            color: #1a73e8;
-        }
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
+        h1, h2, h3 { line-height: 1.25; }
+        h1 { font-size: 2.25rem; margin: 0 0 8px; }
         h2 {
-            font-size: 1.5em;
-            margin-top: 30px;
+            font-size: 1.4rem;
+            margin: 36px 0 14px;
+            padding-top: 8px;
+            border-top: 1px solid var(--border);
         }
-        h3 {
-            font-size: 1.2em;
-            margin-top: 20px;
+        h3 { font-size: 1.08rem; margin: 24px 0 10px; }
+        p, ul { margin: 0 0 16px; }
+        ul { padding-left: 24px; }
+        li { margin-bottom: 8px; }
+        a { color: #b17700; }
+        .meta { color: var(--muted); margin-bottom: 28px; }
+        .summary, .notice {
+            padding: 18px 20px;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            background: var(--soft);
         }
-        p, ul {
-            margin-bottom: 15px;
+        .summary { margin: 24px 0 32px; }
+        .notice { margin: 18px 0; }
+        .footer { margin-top: 40px; color: var(--muted); font-size: 0.92rem; }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text: #f2f2f2;
+                --muted: #b7b7b7;
+                --surface: #161616;
+                --soft: #302812;
+                --border: #454035;
+            }
+            a { color: #ffd45c; }
         }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        a {
-            color: #1a73e8;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        strong {
-            font-weight: bold;
+        @media (max-width: 600px) {
+            body { padding: 32px 20px 56px; }
+            h1 { font-size: 1.9rem; }
         }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p>Last Updated: October 7, 2025</p>
-    <p>Thank you for choosing to use FaceMask (hereinafter referred to as "the App"). This Privacy Policy is intended to inform you about how we collect, use, store, and protect your personal information, particularly regarding the processing of facial data. Please read this Privacy Policy carefully before using the App.</p>
+    <h1>FaceMask Privacy Policy</h1>
+    <p class="meta">Effective date: August 30, 2026</p>
+    <p>This Privacy Policy explains how FaceMask (the “App,” “we,” “us,” or “our”) handles information when you use the App. It applies to the App and related support communications.</p>
 
-    <h2>1. Information We Collect</h2>
-    <h3>1.1 Facial Data</h3>
-    <p>When you use the App’s face replacement feature, we utilize Apple’s Vision framework to detect the position of faces in photos on your device. We only collect the following information:</p>
-    <ul>
-        <li>The position coordinates of faces in the photo (bounding box)</li>
-        <li>The confidence score of face detection</li>
-    </ul>
-    <p><strong>Important Note:</strong></p>
-    <ul>
-        <li>All face detection and processing are performed locally on your device and are not uploaded to any server</li>
-        <li>We do not collect any biometric data or facial feature point information</li>
-        <li>We do not store your original photos or processed photos</li>
-        <li>All processed data is cleared from memory immediately after the App is closed</li>
-    </ul>
+    <div class="summary">
+        <strong>Privacy at a glance</strong>
+        <ul>
+            <li>Photos, face detection, masking, stickers, and manual edits are processed on your device.</li>
+            <li>We do not upload your photos, face regions, or editing content to our servers.</li>
+            <li>If you save an Artwork, the rendered image and related metadata remain on your device until you delete them or uninstall the App.</li>
+            <li>Firebase processes limited usage and diagnostic data, and RevenueCat processes purchase and subscription data.</li>
+        </ul>
+    </div>
 
-    <h3>1.2 Photo Access Permission</h3>
-    <p>To enable the face replacement feature, we require access to your photo library. We only access photos when you actively select them, and:</p>
-    <ul>
-        <li>Photos are processed locally on your device</li>
-        <li>Processed photos are not saved to our servers</li>
-        <li>You can revoke photo access permission at any time through system settings</li>
-    </ul>
+    <h2>1. What FaceMask Does</h2>
+    <p>FaceMask is a face-privacy editing tool. It can detect faces automatically and lets you apply generated privacy covers (including rainbow grid, black-and-white privacy grid, and solid color), blur or pixelation effects, stickers, and manual adjustments. You can review the result, save it as an in-app Artwork, export it to Photos, or share it using the iOS share sheet.</p>
 
-    <h3>1.3 App Usage Data</h3>
+    <h2>2. Photos and Face Processing</h2>
+    <h3>2.1 Photos and camera images</h3>
+    <p>The App receives a photo only when you select it, open an Artwork already stored by the App, or capture a photo with the camera. Your original and edited images are processed locally on your device. They are not sent to Firebase, RevenueCat, or our servers for face detection or image editing.</p>
+
+    <h3>2.2 Face detection data</h3>
+    <p>The App uses Apple’s Vision framework on your device to identify face regions. During an editing session, it may temporarily use face bounding boxes and detection confidence values to position effects. The App does not use this information to identify a person, compare identities, authenticate users, or create a biometric profile or faceprint.</p>
+    <p>Temporary face-detection results are used for the current editing workflow and are not uploaded to us. Closing or leaving the workflow releases temporary editing data in accordance with normal iOS memory management.</p>
+
+    <h3>2.3 Content you choose to save</h3>
+    <p>The App does not automatically store every edited photo. When you choose to save an Artwork, however, the App stores the rendered image, a thumbnail, creation date, title, effect description, and detected face count in the App’s local storage. When you export or share an image, Apple’s Photos service or the destination you choose may retain a copy under its own terms.</p>
+    <p>Camera photos may also be saved to Photos when the App’s auto-save setting is enabled. You can change this preference in the App’s settings.</p>
+
+    <h2>3. Device Permissions</h2>
+    <p>Depending on the feature you use, the App may request:</p>
+    <ul>
+        <li><strong>Photos access:</strong> to let you select images and save processed results.</li>
+        <li><strong>Camera access:</strong> to capture a photo for editing.</li>
+    </ul>
+    <p>You can change these permissions at any time in iOS Settings. If you deny a permission, the related feature may be unavailable, but other parts of the App may continue to work.</p>
+
+    <h2>4. Other Information We Process</h2>
+    <h3>4.1 Usage and diagnostics</h3>
     <p>We use Firebase Analytics to collect anonymous usage data, including:</p>
     <ul>
         <li>Number of App launches</li>
@@ -88,42 +112,76 @@
     </ul>
     <p>This data is completely anonymous and does not contain any personally identifiable information.</p>
 
-    <h2>2. How We Use Information</h2>
-    <p>We use the collected information solely for the following purposes:</p>
+    <h3>4.2 Purchases and subscriptions</h3>
+    <p>Purchases are processed by Apple. We use RevenueCat to display offerings and determine subscription or purchase entitlement status. RevenueCat may process an automatically generated anonymous App User ID, product and entitlement identifiers, subscription status, transaction or receipt information, last-seen time, and limited device or app information. We do not receive your full payment-card details. For more information, see <a href="https://www.revenuecat.com/privacy/" rel="noopener noreferrer">RevenueCat’s Privacy Policy</a>.</p>
+
+    <h3>4.3 Local preferences</h3>
+    <p>The App stores settings such as haptic feedback, automatic photo saving, review-prompt timing, and similar preferences locally on your device.</p>
+
+    <h3>4.4 Communications</h3>
+    <p>If you email us, we receive the information you choose to provide, such as your email address, message, and any attachments. We use it to respond to your request and provide support.</p>
+
+    <h2>5. How We Use Information</h2>
+    <p>We use information to:</p>
     <ul>
-        <li>To provide face detection and sticker replacement features on your device</li>
-        <li>To improve App performance and user experience</li>
-        <li>To diagnose and fix technical issues</li>
+        <li>Provide face detection, privacy effects, stickers, manual editing, saving, exporting, and sharing;</li>
+        <li>Remember your settings and locally saved Artworks;</li>
+        <li>Verify purchases, restore entitlements, and manage access to premium features;</li>
+        <li>Measure feature performance, troubleshoot errors, prevent abuse, and improve the App;</li>
+        <li>Respond to support and privacy requests; and</li>
+        <li>Comply with legal obligations and enforce our terms.</li>
     </ul>
 
-    <h2>3. Information Sharing</h2>
-    <p>We do not share your facial data or photos with any third parties. All processing is performed locally on your device.</p>
-
-    <h2>4. Data Storage and Retention</h2>
+    <h2>6. Sharing and Disclosure</h2>
+    <p>We do not sell your personal information. We do not share your photos or face-detection regions with Firebase or RevenueCat. We may disclose limited information:</p>
     <ul>
-        <li>All facial data and photo processing are conducted on your device</li>
-        <li>We do not store any facial data or photos on our servers</li>
-        <li>All temporary data is automatically cleared when the App is closed</li>
+        <li>To <strong>Google Firebase</strong> for analytics and crash diagnostics;</li>
+        <li>To <strong>RevenueCat</strong> for purchase and entitlement management;</li>
+        <li>To <strong>Apple</strong> when you use Photos, the camera, sharing, App Store purchases, subscription management, or other Apple services;</li>
+        <li>When required by law, legal process, or to protect users, our rights, or the security of the App; or</li>
+        <li>In connection with a business transfer, subject to applicable law and appropriate safeguards.</li>
     </ul>
+    <p>If you choose to share an edited image, the recipient or third-party destination you select will handle that image under its own privacy practices.</p>
 
-    <h2>5. Your Rights</h2>
-    <p>You may at any time:</p>
+    <h2>7. Storage and Retention</h2>
     <ul>
-        <li>Revoke photo access permission through system settings</li>
-        <li>Delete the App to clear all related data</li>
-        <li>Contact us with privacy-related questions</li>
+        <li><strong>Artworks and preferences:</strong> retained locally until you delete the Artwork, clear applicable App data, or uninstall the App.</li>
+        <li><strong>Photos exports:</strong> retained in Photos or by a sharing destination until you remove them there.</li>
+        <li><strong>Firebase and RevenueCat data:</strong> retained according to their policies and operational or legal requirements.</li>
+        <li><strong>Support emails:</strong> retained as reasonably necessary to respond, maintain records, resolve disputes, and meet legal obligations.</li>
     </ul>
+    <p>Deleting the App removes its local container from your device under normal iOS behavior, but it does not automatically delete copies exported to Photos, shared elsewhere, Apple purchase records, or information retained by service providers under their policies.</p>
 
-    <h2>6. Children’s Privacy</h2>
-    <p>The App is not intended for children under the age of 13, and we do not knowingly collect personal information from children.</p>
+    <h2>8. International Processing</h2>
+    <p>Firebase and RevenueCat may process information in countries other than the one where you live. Where required, they and we rely on appropriate legal mechanisms and safeguards for international transfers.</p>
 
-    <h2>7. Privacy Policy Changes</h2>
-    <p>We may update this Privacy Policy from time to time. Any changes will be announced within the App or on our website.</p>
+    <h2>9. Your Choices and Rights</h2>
+    <p>You can:</p>
+    <ul>
+        <li>Review, delete, or export locally saved Artworks in the App;</li>
+        <li>Change camera and Photos permissions in iOS Settings;</li>
+        <li>Change automatic saving and haptic preferences in the App;</li>
+        <li>Manage or cancel subscriptions through your Apple ID subscription settings;</li>
+        <li>Delete the App to remove locally stored App data; and</li>
+        <li>Contact us to exercise privacy rights available in your jurisdiction.</li>
+    </ul>
+    <p>We may need reasonable information to verify and process a request. Some records may be controlled by Apple or held by a service provider, and some information may be retained where required by law.</p>
 
-    <h2>8. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us via:</p>
+    <h2>10. Security</h2>
+    <p>We use reasonable administrative and technical safeguards designed to protect information. No device, storage method, or transmission system is completely secure, so we cannot guarantee absolute security.</p>
+
+    <h2>11. Children’s Privacy</h2>
+    <p>The App is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided personal information to us, contact us so we can review the request.</p>
+
+    <h2>12. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy to reflect changes to the App, service providers, or legal requirements. We will update the effective date above and provide additional notice when required by law.</p>
+
+    <h2>13. Contact Us</h2>
+    <p>For privacy questions or requests, contact:</p>
     <ul>
         <li>Email: <a href="mailto:yvente@163.com">yvente@163.com</a></li>
     </ul>
+
+    <p class="footer">This policy should be read together with the <a href="terms_of_use.html">FaceMask Terms of Use</a>.</p>
 </body>
 </html>

@@ -6,100 +6,161 @@
     <meta name="robots" content="noindex">
     <title>FaceMask Terms of Use</title>
     <style>
+        :root {
+            color-scheme: light dark;
+            --text: #202124;
+            --muted: #5f6368;
+            --surface: #ffffff;
+            --soft: #fff8df;
+            --border: #e7e2d5;
+        }
+        * { box-sizing: border-box; }
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            margin: 0 auto;
+            padding: 48px 24px 72px;
+            line-height: 1.65;
+            color: var(--text);
+            background: var(--surface);
+            max-width: 860px;
         }
-        h1, h2, h3 {
-            color: #1a73e8;
-        }
-        h1 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
+        h1, h2, h3 { line-height: 1.25; }
+        h1 { font-size: 2.25rem; margin: 0 0 8px; }
         h2 {
-            font-size: 1.5em;
-            margin-top: 30px;
+            font-size: 1.4rem;
+            margin: 36px 0 14px;
+            padding-top: 8px;
+            border-top: 1px solid var(--border);
         }
-        h3 {
-            font-size: 1.2em;
-            margin-top: 20px;
+        h3 { font-size: 1.08rem; margin: 24px 0 10px; }
+        p, ul { margin: 0 0 16px; }
+        ul { padding-left: 24px; }
+        li { margin-bottom: 8px; }
+        a { color: #b17700; }
+        .meta { color: var(--muted); margin-bottom: 28px; }
+        .notice {
+            padding: 18px 20px;
+            margin: 24px 0 32px;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            background: var(--soft);
         }
-        p, ul {
-            margin-bottom: 15px;
+        .footer { margin-top: 40px; color: var(--muted); font-size: 0.92rem; }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text: #f2f2f2;
+                --muted: #b7b7b7;
+                --surface: #161616;
+                --soft: #302812;
+                --border: #454035;
+            }
+            a { color: #ffd45c; }
         }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        a {
-            color: #1a73e8;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        strong {
-            font-weight: bold;
+        @media (max-width: 600px) {
+            body { padding: 32px 20px 56px; }
+            h1 { font-size: 1.9rem; }
         }
     </style>
 </head>
 <body>
-    <h1>Terms of Use</h1>
-    <p>Last Updated: October 7, 2025</p>
-    <p>Welcome to FaceMask (hereinafter referred to as "the App"). Please read these Terms of Use carefully before using the App.</p>
+    <h1>FaceMask Terms of Use</h1>
+    <p class="meta">Effective date: August 30, 2026</p>
+    <p>These Terms of Use (“Terms”) govern your use of FaceMask (the “App”). By downloading, installing, purchasing, or using the App, you agree to these Terms. If you do not agree, do not use the App.</p>
 
-    <h2>1. Acceptance of Terms</h2>
-    <p>By downloading, installing, or using the App, you agree to be bound by all terms and conditions of these Terms of Use. If you do not agree to these terms, please do not use the App.</p>
+    <div class="notice">
+        <strong>Important privacy-tool limitation:</strong> Face detection and privacy effects can help reduce exposure of facial information, but no automated detection or editing method can guarantee complete anonymity or irreversible concealment. You must review the final image before saving or sharing it.
+    </div>
 
-    <h2>2. License Grant</h2>
-    <p>We grant you a limited, non-exclusive, non-transferable license to use the App for personal, non-commercial purposes, subject to these Terms of Use.</p>
+    <h2>1. Relationship to Apple’s Terms</h2>
+    <p>The App is licensed, not sold. Your use of the App is also subject to Apple’s applicable App Store terms and the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer">Apple Standard Licensed Application End User License Agreement</a> (“Apple Standard EULA”). These Terms supplement the Apple Standard EULA. If a provision conflicts, the Apple Standard EULA or mandatory applicable law controls to the extent of the conflict.</p>
 
-    <h2>3. Use Restrictions</h2>
+    <h2>2. App Features</h2>
+    <p>FaceMask is a face-privacy editing tool. Depending on the current App version and your purchase status, features may include:</p>
+    <ul>
+        <li>Automatic on-device detection of one or more faces;</li>
+        <li>Generated privacy covers, including rainbow grid, black-and-white privacy grid, and solid color;</li>
+        <li>Gaussian blur, pixelation, box blur, motion blur, and other visual effects;</li>
+        <li>Random or selected privacy stickers;</li>
+        <li>Manual regions, positioning, resizing, rotation, color, opacity, and undo or redo controls;</li>
+        <li>Local Artworks, export to Photos, and sharing through iOS.</li>
+    </ul>
+    <p>Features, designs, effects, and availability may change over time. Some features require a compatible device, current operating system, permission to access Photos or the camera, or an active purchase entitlement.</p>
+
+    <h2>3. License</h2>
+    <p>Subject to these Terms and the Apple Standard EULA, we grant you a limited, personal, non-exclusive, non-transferable, non-sublicensable, and revocable license to use the App on Apple-branded devices you own or control, as permitted by Apple’s Usage Rules.</p>
+
+    <h2>4. Your Photos and Responsibilities</h2>
+    <p>You retain your rights in photos and other content you edit with the App. You are responsible for:</p>
+    <ul>
+        <li>Having the necessary rights or permission to use, edit, save, and share the content;</li>
+        <li>Respecting the privacy, publicity, intellectual-property, and other rights of people shown in the content;</li>
+        <li>Reviewing every detected face and manually correcting missed or inaccurate regions;</li>
+        <li>Reviewing the exported image, its surrounding context, and any metadata before sharing; and</li>
+        <li>Complying with applicable laws and the rules of any platform where you publish the result.</li>
+    </ul>
+    <p>You grant the App only the device-level access technically necessary to process the content and perform actions you request. As described in the Privacy Policy, photo editing and face detection occur locally on your device.</p>
+
+    <h2>5. Privacy Protection Is Not a Guarantee</h2>
+    <p>Automated face detection may miss a face, select a non-face region, or position a mask inaccurately. Image context, clothing, tattoos, location, metadata, reflections, or other characteristics may still identify a person even when a face is covered.</p>
+    <p>Blur and pixelation preserve transformed information derived from the source image and may provide less protection than fully generated covers. Generated strong-privacy covers are designed not to reproduce the underlying face pixels inside the covered region, but their effectiveness still depends on correct placement, coverage, export quality, and the surrounding image. The App does not warrant that any result is impossible to reverse, legally anonymized, or suitable for a particular security, regulatory, journalistic, medical, or professional requirement.</p>
+
+    <h2>6. Purchases, Subscriptions, and Free Trials</h2>
+    <h3>6.1 Billing</h3>
+    <p>Purchases are processed by Apple through your Apple ID. Available products, billing period, local price, included features, and any trial or introductory offer are displayed in the App before you confirm a purchase. Taxes and currency conversion may apply.</p>
+
+    <h3>6.2 Auto-renewable subscriptions</h3>
+    <p>An auto-renewable subscription continues for the selected period and renews automatically unless you cancel it at least 24 hours before the end of the current period. Apple may charge your Apple ID within 24 hours before renewal. You can manage or cancel subscriptions in your Apple ID subscription settings. Deleting the App does not cancel a subscription.</p>
+
+    <h3>6.3 Trials and introductory offers</h3>
+    <p>If Apple determines that you are eligible for a free trial or introductory offer, the offer will convert to the displayed paid subscription unless canceled at least 24 hours before the trial or offer ends. Eligibility and redemption are determined by Apple, and an offer may not be available to every user.</p>
+
+    <h3>6.4 Restoration, refunds, and product changes</h3>
+    <p>You can use Restore Purchases in the App to ask Apple and our entitlement provider to restore eligible purchases. Refund requests and billing disputes are handled by Apple under its policies. We may change future prices, plans, or premium features in accordance with Apple’s procedures and applicable law. Any non-consumable or lifetime product, if offered, grants access only to the features described at the time of purchase and does not create ownership of the App or guarantee that every future product or service will be included.</p>
+
+    <h2>7. Acceptable Use</h2>
     <p>You may not:</p>
     <ul>
-        <li>Modify, translate, adapt, reverse engineer, or decompile the App in any way</li>
-        <li>Remove any copyright or other proprietary notices from the App</li>
-        <li>Use the App for any illegal purpose</li>
-        <li>Interfere with or disrupt the normal operation of the App in any way</li>
+        <li>Use the App for unlawful, fraudulent, harassing, abusive, defamatory, or rights-infringing activity;</li>
+        <li>Use edited content to impersonate, deceive, exploit, or harm another person;</li>
+        <li>Interfere with the App, its purchase systems, security, or normal operation;</li>
+        <li>Bypass purchase restrictions or obtain premium access without authorization;</li>
+        <li>Copy, redistribute, sublicense, sell, rent, or commercially exploit the App except where expressly permitted; or</li>
+        <li>Reverse engineer, decompile, disassemble, or attempt to derive source code except to the limited extent such restriction is prohibited by applicable law.</li>
     </ul>
 
-    <h2>4. Intellectual Property</h2>
-    <p>The App and all related content (including but not limited to software, text, images, audio, and video) are the intellectual property of us or our licensors.</p>
+    <h2>8. Intellectual Property</h2>
+    <p>The App, its software, interface, original artwork, stickers, text, branding, and other materials are owned by us or our licensors and are protected by applicable intellectual-property laws. These Terms do not transfer ownership of the App or its materials to you.</p>
 
-    <h2>5. Facial Data Processing</h2>
-    <h3>5.1 Local Processing</h3>
-    <p>You agree that the App uses Apple’s Vision framework to detect the position of faces in photos on your device, with all processing performed locally and not uploaded to any server.</p>
-    <h3>5.2 Data Collection</h3>
-    <p>We only collect the information necessary to enable the face detection function, including face position coordinates and confidence scores, and do not collect any biometric data.</p>
-    <h3>5.3 Data Use</h3>
-    <p>The collected information is used solely to provide face detection and sticker replacement features on your device and will not be used for any other purpose.</p>
-    <h3>5.4 Data Sharing</h3>
-    <p>We do not share your facial data or photos with any third parties.</p>
+    <h2>9. Third-Party Services</h2>
+    <p>The App relies on Apple services and may use third-party services such as Firebase for analytics and crash diagnostics and RevenueCat for purchase entitlement management. Those services are governed by their own terms and privacy policies. We are not responsible for third-party services outside our reasonable control.</p>
 
-    <h2>6. Age Restriction</h2>
-    <p>The App is not intended for children under the age of 13. If you are under 13, please do not use the App.</p>
+    <h2>10. Availability, Updates, and Changes</h2>
+    <p>We may add, change, suspend, or discontinue features; release updates; or modify device and operating-system requirements. We do not guarantee that the App or every feature will always be available, uninterrupted, compatible with every device, or free of errors. You are responsible for maintaining backups of images you wish to keep.</p>
 
-    <h2>7. Disclaimer</h2>
-    <p>The App is provided "as is" without any express or implied warranties. We are not liable for any direct, indirect, incidental, or consequential damages arising from the use or inability to use the App.</p>
+    <h2>11. Disclaimer of Warranties</h2>
+    <p>To the maximum extent permitted by law, the App is provided “as is” and “as available,” without warranties of merchantability, fitness for a particular purpose, accuracy, non-infringement, availability, or guaranteed privacy outcomes. Nothing in these Terms excludes warranties or consumer rights that cannot legally be excluded.</p>
 
-    <h2>8. Service Changes and Termination</h2>
-    <p>We may update or adjust the App’s features as needed to improve user experience or adapt to technological developments. We will notify users in advance where reasonably possible. If you violate these Terms, we reserve the right to terminate your license to use the App.</p>
+    <h2>12. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by law, we will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages, or for loss of data, profits, reputation, opportunity, or privacy arising from use of or inability to use the App. Where liability cannot be excluded, it will be limited to the extent permitted by applicable law. Mandatory consumer-protection rights remain unaffected.</p>
 
-    <h2>9. Governing Law and Dispute Resolution</h2>
-    <p>These Terms of Use are governed by the laws of your country, without regard to its conflict of law principles. Any disputes arising from these Terms shall first be resolved through amicable negotiation. If negotiation fails, either party may file a lawsuit in a competent court in the developer’s jurisdiction.</p>
+    <h2>13. Suspension and Termination</h2>
+    <p>You may stop using the App at any time. Your rights under these Terms may terminate if you materially violate them. Provisions that by their nature should survive termination—including ownership, disclaimers, liability limits, and dispute provisions—will survive.</p>
 
-    <h2>10. Contact Us</h2>
-    <p>If you have any questions about these Terms of Use, please contact us via:</p>
+    <h2>14. Children</h2>
+    <p>The App is not directed to children under 13. If you are under the minimum age required to agree to these Terms where you live, you may use the App only with authorization from a parent or legal guardian.</p>
+
+    <h2>15. Changes to These Terms</h2>
+    <p>We may update these Terms to reflect changes to the App, purchases, service providers, or legal requirements. We will update the effective date and provide additional notice where required. Continued use after revised Terms take effect constitutes acceptance to the extent permitted by law.</p>
+
+    <h2>16. Governing Law and Disputes</h2>
+    <p>These Terms are governed by applicable law, without limiting any mandatory rights you have under the laws of your place of residence. Before filing a claim, you and we agree to make a reasonable effort to resolve the issue informally by email, unless applicable law permits you to proceed directly.</p>
+
+    <h2>17. Contact Us</h2>
+    <p>Questions about these Terms may be sent to:</p>
     <ul>
         <li>Email: <a href="mailto:yvente@163.com">yvente@163.com</a></li>
     </ul>
+
+    <p class="footer">See the <a href="privacy_policy.html">FaceMask Privacy Policy</a> for information about data handling.</p>
 </body>
 </html>
