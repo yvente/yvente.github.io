@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#146152">
+    <title>レシート保管庫（Receipt Vault）サポート</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --accent: #146152;
+            --accent-soft: #e3f2ed;
+            --background: #f3f7f5;
+            --surface: #ffffff;
+            --text: #183a32;
+            --secondary: #5b6f68;
+            --border: rgba(20, 97, 82, 0.18);
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 48px 24px;
+            background: var(--background);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+        main {
+            width: min(100%, 820px);
+            margin: 0 auto;
+            padding: 44px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            box-shadow: 0 18px 50px rgba(20, 97, 82, 0.08);
+        }
+        .eyebrow {
+            margin: 0 0 8px;
+            color: var(--accent);
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+        h1, h2, h3 {
+            color: var(--accent);
+            line-height: 1.35;
+        }
+        h1 {
+            margin: 0 0 8px;
+            font-size: clamp(2rem, 6vw, 2.8rem);
+            letter-spacing: -0.035em;
+        }
+        h2 {
+            margin: 36px 0 12px;
+            font-size: 1.4rem;
+        }
+        h3 {
+            margin: 24px 0 8px;
+            font-size: 1.08rem;
+        }
+        p, ul {
+            margin: 0 0 16px;
+        }
+        ul {
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .updated {
+            margin-bottom: 28px;
+            color: var(--secondary);
+            font-size: 0.95rem;
+        }
+        .contact {
+            margin: 28px 0;
+            padding: 20px 22px;
+            background: var(--accent-soft);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+        }
+        .contact p:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            color: var(--accent);
+            font-weight: 600;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+        }
+        .footer-link {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            color: var(--secondary);
+            font-size: 0.92rem;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --accent: #7ed3b8;
+                --accent-soft: rgba(126, 211, 184, 0.12);
+                --background: #000000;
+                --surface: #15201d;
+                --text: #eef7f4;
+                --secondary: #a8bdb6;
+                --border: rgba(126, 211, 184, 0.24);
+            }
+            main {
+                box-shadow: none;
+            }
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 14px;
+            }
+            main {
+                padding: 28px 22px;
+                border-radius: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <p class="eyebrow">Receipt Vault</p>
+    <h1>サポート</h1>
+    <p class="updated">対象バージョン：1.1.0 ・ 最終更新日：2026年10月27日</p>
+
+    <p>「レシート保管庫 - OCR・領収書管理」は、レシート画像を端末内で読み取り、店舗名・取引日・合計金額を整理するiOSアプリです。レシート画像、文字認識、保存した項目は端末内に保持され、開発者のサーバーへ送信されません。</p>
+
+    <div class="contact">
+        <h2 style="margin-top: 0;">お問い合わせ</h2>
+        <p>ご質問、不具合のご報告、機能のご要望は、次のメールアドレスまでお送りください。</p>
+        <p>メール：<a href="mailto:yvente@163.com">yvente@163.com</a></p>
+        <p>できるだけ早く回答いたします。お問い合わせの際は、次の情報をお知らせください。</p>
+        <ul>
+            <li>お使いのiPhoneまたはiPadの機種</li>
+            <li>iOSまたはiPadOSのバージョン</li>
+            <li>アプリのバージョン（設定画面の下部に表示されます）</li>
+            <li>問題が発生したときの操作手順と、表示されたメッセージ</li>
+        </ul>
+        <p>レシート画像や個人情報を添付する必要はありません。English support is available at the same address.</p>
+    </div>
+
+    <h2>よくある質問</h2>
+
+    <h3>レシートを追加するには？</h3>
+    <p>ホーム画面の追加ボタンから、書類スキャナーでの撮影、写真ライブラリからの選択、またはファイルからの読み込みを選べます。初回はカメラ、写真、ファイルへのアクセス許可を求められる場合があります。許可しない場合でも、利用できる読み込み方法があります。</p>
+
+    <h3>読み取り結果が正しくないときは？</h3>
+    <p>読み取り結果は保存前に確認画面で修正できます。店舗名、取引日、合計金額をレシート原本と照合し、必要に応じて入力し直してください。文字認識は、レシートの折れ、反射、ぼけ、印刷状態などにより誤ることがあります。本アプリは認識結果の正確性を保証するものではありません。</p>
+
+    <h3>データはどこに保存されますか？</h3>
+    <p>保存したレシート画像、文字認識結果、店舗名、日付、金額、メモ、タグ、リマインダーは、お使いの端末内に保存されます。アカウント登録は不要で、クラウド文字認識や開発者のサーバーへの送信は行いません。アプリを削除すると、端末内のレコードと画像は削除されます。</p>
+
+    <h3>CSV / PDF で書き出すには？</h3>
+    <p>設定画面の「すべてのレシートをCSVで書き出す」から、保存した記録をCSVファイルとして書き出せます。CSVには店舗名、取引日、金額などの記録が含まれ、レシート画像は含まれません。各レシートはPDFとして共有することもできます。書き出したファイルは、iOSの共有シートから保存先や共有先を選べます。</p>
+
+    <h3>保存できるレシート件数に上限はありますか？</h3>
+    <p>Proにアップグレードしていない場合、保存できるレシートは10件までです。Proでは保存件数の上限がなくなります。</p>
+
+    <h3>Proの機能と購入の復元方法は？</h3>
+    <p>Proでは、レシートの保存件数が無制限になり、最大5枚の一括読み込みと、返品・保証期限のリマインダーが利用できます。Proは買い切りで、サブスクリプションではありません。再インストールや機種変更の後にProの機能が表示されない場合は、設定画面の「購入を復元」を選び、購入時と同じApple Accountでサインインしてください。復元によって再度料金が発生することはありません。</p>
+
+    <h3>返品・保証のリマインダーはどのように動きますか？</h3>
+    <p>レシートの編集画面で返品または保証の種別と通知日を設定すると、指定した日にローカル通知でお知らせします。通知日は利用者ご自身で設定してください。本アプリが店舗の返品・保証条件や期限を自動判定することはありません。通知の許可が必要です。</p>
+
+    <h3>機種変更や再インストールでデータは引き継がれますか？</h3>
+    <p>本アプリはアカウントやクラウド同期を使用していないため、開発者側でのデータ移行はできません。iCloudバックアップまたは端末バックアップから復元した場合は、バックアップに含まれていたデータが戻ることがあります。バックアップを使用せずにアプリを削除した場合、保存したレコードと画像は復元できません。</p>
+
+    <h3>通知が届かないときは？</h3>
+    <p>iOSの「設定」&gt;「通知」&gt;「レシート保管庫」で通知が許可されているか確認してください。集中モード、通知の要約、通知の配信時間などの設定もご確認ください。アプリを削除して再インストールした場合、以前に設定したリマインダーは失われることがあります。</p>
+
+    <h3>レシート画像は外部へ送信されますか？</h3>
+    <p>レシート画像、OCR結果、保存した項目は端末内で処理され、開発者のサーバーへ送信されません。第三者の広告SDKやアクセス解析SDKも使用していません。詳しくは<a href="privacy_policy.html">プライバシーポリシー</a>をご確認ください。</p>
+
+    <h2>関連ページ</h2>
+    <ul>
+        <li><a href="privacy_policy.html">プライバシーポリシー</a></li>
+        <li><a href="terms_of_use.html">利用規約</a></li>
+    </ul>
+
+    <p class="footer-link">レシート保管庫 サポート ・ バージョン 1.1.0 ・ 最終更新日：2026年10月27日 ・ <a href="mailto:yvente@163.com">yvente@163.com</a></p>
+</main>
+</body>
+</html>
